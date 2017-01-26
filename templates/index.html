@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				
+					<h1>What are the top Yelp businesses in your area?</h1>
+				
+
+						<form action="/" class="form-inline">
+  						<label class="sr-only" for="inlineFormInput">Type of service</label>
+  						<input type="text" class="form-control" id="inlineFormInput" name="term" placeholder="Type of service">
+
+  						<label class="sr-only" for="inlineFormInputGroup">City, State</label>
+  						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+  						</div>
+  						<div>
+    						<input type="text" class="form-control" id="inlineFormInputGroup" name="address" placeholder="City, State">
+  						</div>
+  					
+  						<button type="submit" class="btn btn-primary">Submit</button>
+  					{% if term, address %}
+					<p>{{ businesses }}</p>
+					{% endif %}
+					</form>
+			
+						
+						
+				
+			</div>
+		</div>
+		
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
