@@ -4,6 +4,9 @@ import os
 app = Flask(__name__)
 # app = Flask()
 
+#Github link for this project: https://github.com/catwhisperingninja/yelp_flask_app
+#Heroku link for this project: https://quiet-peak-64273.herokuapp.com/
+
 @app.route("/")
 def index():
 	term = request.values.get('term')
