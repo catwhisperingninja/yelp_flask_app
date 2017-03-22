@@ -34,10 +34,7 @@ def get_term_location(term, location):
 			"rating": business.rating,
 			"address": business.location.address
 		})
-	if len(businesses) == 0:
-		return ""
-	else:
-		return businesses[:3]
+	return businesses[:3]
 
 # businesses_in_city = get_term_location("food", "Los Angeles CA")
 
